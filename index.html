@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <title>Statisch</title>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "media",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#F97316", // A vibrant orange
+                            "background-light": "#F3F4F6", // Light gray
+                            "background-dark": "#000", // Dark blue-gray
+                        },
+                        fontFamily: {
+                            display: ["Sora", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.5rem",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .material-icons {
+                font-size: inherit;
+            }
+        </style>
+    </head>
+    <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200 antialiased">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <header class="lg:flex lg:justify-between lg:items-center py-6">
+                <div class="flex justify-center items-center relative grow-0 space-x-4 lg:m-0 mb-4">
+                    <h1 class="text-3xl font-bold text-gray-900 dark:text-white">statisch.co</h1>
+                    <img src="/logo.svg" class="w-20"></img>
+                </div>
+                    <nav class="hidden md:flex justify-center items-center space-x-8">
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#home">Home</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#features">Features</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#pricing">Pricing</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#about">About</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#contact">Contact</a>
+                    </nav>
+                    <a class="hidden lg:flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-full hover:opacity-90 transition-opacity grow-0" href="#contact">
+                        <span>Get in Touch</span>
+                        <span class="material-icons">arrow_forward</span>
+                    </a>
+                    <!-- <button class="md:hidden text-gray-900 dark:text-white">
+                        <span class="material-icons text-3xl">menu</span>
+                    </button> -->
+            </header>
+            <main class="py-20 md:py-32" id="home">
+                <div class="text-center">
+                    <h2 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">Your First Website, Made Simple.</h2>
+                    <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-gray-600 dark:text-gray-300">Fast, reliable, and professional static websites for small businesses ready to make their mark online.</p>
+                    <div class="mt-10 flex justify-center items-center gap-4">
+                        <a class="flex items-center space-x-2 bg-primary text-white px-6 py-3 rounded-full text-lg hover:opacity-90 transition-opacity" href="#features">
+                        <span>Get Started</span>
+                        <span class="material-icons">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </main>
+            <section class="py-20 scroll-mt-16" id="features">
+                <div class="text-center mb-12">
+                    <a class="text-primary font-semibold" href="#features">#FEATURES</a>
+                    <h3 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900 dark:text-white">Everything You Need to Get Online</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-primary/10 text-primary px-3 py-2 rounded-full flex justify-center items-center w-12 h-12">
+                            <span class="material-icons text-3xl">call</span>
+                        </div>
+                        <h4 class="text-xl font-bold mt-4 text-gray-900 dark:text-white">Click To Call</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Turn visitors into leads instantly one, with click-to-call buttons one tap connects them straight to you.</p>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-primary/10 text-primary p-3 rounded-full flex justify-center items-center w-12 h-12">
+                            <span class="material-icons text-3xl">cloud</span>
+                        </div>
+                        <h4 class="text-xl font-bold mt-4 text-gray-900 dark:text-white">Free Hosting</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Launch without limits! Reliable hosting included at no extra cost with unlimited bandwidth.</p>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-primary/10 text-primary p-3 rounded-full flex justify-center items-center w-12 h-12">
+                            <span class="material-icons text-3xl">email</span>
+                        </div>
+                        <h4 class="text-xl font-bold mt-4 text-gray-900 dark:text-white">Mail-to Forms</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Never miss an opportunity. Form submissions go directly to your inbox.</p>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-primary/10 text-primary p-3 rounded-full flex justify-center items-center w-12 h-12">
+                            <span class="material-icons text-3xl">lock</span>
+                        </div>
+                        <h4 class="text-xl font-bold mt-4 text-gray-900 dark:text-white">Secure Design</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">With no databases or complex systems to break into, static sites give hackers nothing to attack, keeping your website safe by design.</p>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-primary/10 text-primary p-3 rounded-full flex justify-center items-center w-12 h-12">
+                            <span class="material-icons text-3xl">description</span>
+                        </div>
+                        <h4 class="text-xl font-bold mt-4 text-gray-900 dark:text-white">Content Editing</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">We handle updating text, swapping images, and tweaking details. No tech skills from you are required. Just send us an email whenever you need.</p>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="bg-primary/10 text-primary p-3 rounded-full flex justify-center items-center w-12 h-12">
+                            <span class="material-icons text-3xl">rocket_launch</span>
+                        </div>
+                        <h4 class="text-xl font-bold mt-4 text-gray-900 dark:text-white">Blazing Fast</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Speed sells! Your site loads in a flash, keeping visitors engaged and boosting SEO.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 scroll-mt-16" id="pricing">
+                <div class="text-center mb-12">
+                    <a class="text-primary font-semibold" href="#pricing">#PRICING</a>
+                    <h3 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900 dark:text-white">Simple, Transparent Pricing</h3>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Forget the hassle of DIY WordPress, Wix, or Squarespace, etc. No plugins to update, no hidden fees, no more wondering how to do this or that. With Statisch, everything is handled for you.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md flex flex-col hover:shadow-xl transition-shadow">
+                        <h4 class="text-2xl font-bold text-gray-900 dark:text-white">Basic</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">The essentials to get started.</p>
+                        <div class="my-8">
+                            <span class="text-5xl font-bold text-gray-900 dark:text-white">£180</span>
+                            <span class="text-gray-600 dark:text-gray-400">/year</span>
+                        </div>
+                        <ul class="space-y-4 text-gray-600 dark:text-gray-300 flex-grow">
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>1 Page Website</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Mobile Friendly</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Free Web Hosting</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Domain Name Configuration</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Click To Call Buttons</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Mail-to Forms</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Content Editing</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Support</span>
+                            </li>
+                        </ul>
+                        <a class="mt-8 w-full text-center bg-primary/10 text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary/20 transition-colors" href="#contact">Contact Us</a>
+                    </div>
+                    <div class="bg-primary dark:bg-primary p-8 rounded-lg shadow-xl flex flex-col ring-4 ring-primary/50 dark:ring-primary/50 relative">
+                        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                            <span class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white">Premium</h4>
+                        <p class="mt-2 text-white/90">Everything you need to succeed online.</p>
+                        <div class="my-8">
+                            <span class="text-5xl font-bold text-white">£320</span>
+                            <span class="text-white/90">/year</span>
+                        </div>
+                        <ul class="space-y-4 text-white/90 flex-grow">
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons">check_circle</span>
+                                <span>Everything in Basic</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons">check_circle</span>
+                                <span>Up to 5 Pages</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons">check_circle</span>
+                                <span>Animations</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons">check_circle</span>
+                                <span>Embedded Open Street Map</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons">check_circle</span>
+                                <span>Custom Design</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons">check_circle</span>
+                                <span>SEO &amp; Performance Optimized</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons">check_circle</span>
+                                <span>Source Code Ownership</span>
+                            </li>
+                        </ul>
+                        <a class="mt-8 w-full text-center bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors" href="#contact">Contact Us</a>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 p-8 rounded-lg shadow-md flex flex-col hover:shadow-xl transition-shadow">
+                        <h4 class="text-2xl font-bold text-gray-900 dark:text-white">Priority</h4>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">For businesses wanting more.</p>
+                        <div class="my-8">
+                            <span class="text-5xl font-bold text-gray-900 dark:text-white">£500</span>
+                            <span class="text-gray-600 dark:text-gray-400">/year</span>
+                        </div>
+                        <ul class="space-y-4 text-gray-600 dark:text-gray-300 flex-grow">
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Everything in Premium</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Unlimited Pages</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Advanced SEO</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>AI Optimization</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Web Traffic Reports</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Third-party API integration</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="material-icons text-primary">check_circle</span>
+                                <span>Priority Support</span>
+                            </li>
+                        </ul>
+                        <a class="mt-8 w-full text-center bg-primary/10 text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary/20 transition-colors" href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 scroll-mt-16" id="about">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <a class="text-primary font-semibold" href="#about">#WHO WE ARE</a>
+                        <h3 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900 dark:text-white">Your Partner in Digital Growth</h3>
+                        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">At Statisch.co we help small businesses get online quickly with beautiful, static websites that are fast, secure, and easy to maintain. I'm Jordan Täuscher the sole proprietor of Statisch.co, I personally oversee every project while collaborating with my network of trusted freelancers to deliver high-quality results without the complexity or high costs of conventional web development. We handle the tech so you can focus on growing your business.</p>
+                        <div class="mt-8">
+                            <a class="inline-flex items-center space-x-2 bg-gray-800 dark:bg-white text-white dark:text-gray-900 px-6 py-3 rounded-full hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors" href="https://jordantauscher.xyz" target="_blank">
+                            <span>More about me</span>
+                            <span class="material-icons">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative h-80 lg:h-96">
+                        <img alt="A team of professionals collaborating in a modern office" class="absolute w-full h-full object-cover rounded-lg shadow-lg z-0" src="/roundtable.jpg"/>
+                        <img class="z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50" src="/logo.svg" alt="the statisch hourglass logo">
+                    </div>
+                </div>
+            </section>
+            <section class="py-20" id="faq">
+                <div class="text-center mb-12">
+                    <a class="text-primary font-semibold" href="#faq">#FAQ</a>
+                    <h3 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900 dark:text-white">Frequently Asked Questions</h3>
+                    <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Got questions? We've got answers. If you can't find what you're looking for, feel free to contact us.</p>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4" x-data="{ open: null }">
+                    <div class="bg-white dark:bg-neutral-900 rounded-lg shadow-md">
+                        <button @click="open = open === 1 ? null : 1" class="w-full flex justify-between items-center text-left p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">What is a static website?</h4>
+                            <span :class="{ 'rotate-45': open === 1 }" class="material-icons text-primary transition-transform">add</span>
+                        </button>
+                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-300" x-show="open === 1">
+                            <p>A static website is a site that is delivered to a user's web browser exactly as it's stored. Unlike dynamic websites, they don't require server-side processing or database calls. This makes them incredibly fast, secure, and reliable; perfect for small businesses.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 rounded-lg shadow-md">
+                        <button @click="open = open === 2 ? null : 2" class="w-full flex justify-between items-center text-left p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">What's included in your pricing?</h4>
+                            <span :class="{ 'rotate-45': open === 2 }" class="material-icons text-primary transition-transform">add</span>
+                        </button>
+                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-300" x-show="open === 2">
+                            <p>Our pricing plans are all-inclusive. They cover the design and development of your website, mobile-responsive design, a contact form, hosting, and depending on the plan, features like multiple pages, and SEO optimization. There are no hidden fees.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 rounded-lg shadow-md">
+                        <button @click="open = open === 3 ? null : 3" class="w-full flex justify-between items-center text-left p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">How long does it take to build a website?</h4>
+                            <span :class="{ 'rotate-45': open === 3 }" class="material-icons text-primary transition-transform">add</span>
+                        </button>
+                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-300" x-show="open === 3">
+                            <p>Typically, a basic website can be launched within 1-2 weeks once we have all the necessary content from you. More complex sites might take longer. We'll give you a precise timeline after our initial consultation.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 rounded-lg shadow-md">
+                        <button @click="open = open === 4 ? null : 4" class="w-full flex justify-between items-center text-left p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">What do you need from me to get started?</h4>
+                            <span :class="{ 'rotate-45': open === 4 }" class="material-icons text-primary transition-transform">add</span>
+                        </button>
+                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-300" x-show="open === 4">
+                            <p>To start, we'll need your business information, any branding materials you have (like logos and color schemes), and the content for your website (text and images). If you don't have content ready, we can help you create it.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 rounded-lg shadow-md">
+                        <button @click="open = open === 5 ? null : 5" class="w-full flex justify-between items-center text-left p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">What is a mail-to form?</h4>
+                            <span :class="{ 'rotate-45': open === 5 }" class="material-icons text-primary transition-transform">add</span>
+                        </button>
+                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-300" x-show="open === 5">
+                            <p>A mail-to form is a type of web form that, instead of sending the information to a website server, opens your email software (like Gmail, Outlook, or iCloud Mail) and puts the form’s information into a new email for you to send. Think of it like an email template your customers can use. You can use our contact button below to see one in action.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-900 rounded-lg shadow-md">
+                        <button @click="open = open === 6 ? null : 6" class="w-full flex justify-between items-center text-left p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">What if I need features that require a server?</h4>
+                            <span :class="{ 'rotate-45': open === 6 }" class="material-icons text-primary transition-transform">add</span>
+                        </button>
+                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-300" x-show="open === 6">
+                            <p>If you need features that require a server like database storage, email auto-responders, or payment processing, you’ll need an API integration with a third-party service. Which will incur an additional cost on top of your annual subscription. This cost depends on the additional man hours we will spend per week engineering and maintaining the integration. We will discuss the exact cost and more with you during our consultation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 px-8 bg-white dark:bg-neutral-900 rounded-lg my-16 scroll-mt-28" id="contact">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Ready to Launch Your Website?</h3>
+                    <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Let's build a website that grows your business. Get in touch for a free consultation and quote.</p>
+                    <div class="mt-8">
+                        <a class="inline-flex items-center space-x-2 bg-primary text-white px-8 py-4 rounded-full text-lg hover:opacity-90 transition-opacity" href="mailto:contact@statisch.co?subject=Statisch%20-%20Order%20Inquiry&body=Hello%20Statisch.co%2C%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20consultation%20with%20you%20to%20discuss%20your%20%5BBasic%2FPremium%2FPriority%5D%20website%20package.%20My%20details%20are%20as%20follows%3A%0D%0A%0D%0A-%20Full%20Name%3A%0D%0A-%20Business%20Name%20(if%20applicable)%3A%0D%0A-%20Preferred%20Contact%20Email%3A%0D%0A-%20Phone%20Number%3A%0D%0A-%20Domain%20Name%20(if%20you%20already%20own%20one)%3A%0D%0A-%20Availability%20(our%20opening%20times%20are%208AM%20-%204PM%20Mon%20-%20Fri)%3A%0D%0A%0D%0AAdditional%20Notes%20%2F%20Questions%3A%0D%0A%0D%0A%0D%0ABy%20sending%20this%20email%2C%20I%20confirm%20that%20I%20agree%20to%20the%20Terms%20of%20Service.%0D%0A%0D%0AThank%20you%2C%0D%0A%5BYour%20Name%5D"
+>
+                        <span class="material-icons">email</span>
+                        <span>contact@statisch.co</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer class="py-12 border-t border-gray-200 dark:border-gray-700">
+                <div class="md:flex md:justify-between">
+                    <div class="flex items-start justify-center space-x-4 mb-4 md:mb-0 xs:block lg:flex">
+                        <h3 class="text-2xl h-10 leading-10 font-bold text-gray-900 dark:text-white">Statisch.co</h3>
+                        <img src="/logo.svg" alt="Logo" class="h-10 object-contain align-start" />
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 justify-center md:ml-12 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center md:text-left">
+                        <div class="md:col-span-1">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Navigation</h4>
+                            <ul class="mt-4 space-y-2">
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#home">Home</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#features">Features</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#pricing">Pricing</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#about">About</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Company</h4>
+                            <ul class="mt-4 space-y-2">
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/privacy">Privacy policy</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/terms-of-service">Terms of service</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/code-of-conduct">Code of conduct</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="/service-agreement">Service agreement</a></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Support</h4>
+                            <ul class="mt-4 space-y-2">
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="mailto:support@statisch.co">support@statisch.co</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="mailto:priority@statisch.co">priority@statisch.co</a></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Contact &amp; Legal</h4>
+                            <ul class="mt-4 space-y-2">
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="mailto:billing@statisch.co">billing@statisch.co</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="mailto:contact@statisch.co">contact@statisch.co</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="mailto:privacy@statisch.co">privacy@statisch.co</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
+                    <p class="text-gray-600 dark:text-gray-400">© 2025 Statisch. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="//unpkg.com/alpinejs" defer></script>
+    </body>
+</html>
+

@@ -1,0 +1,18 @@
+<svg viewBox="20 40 80 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="duotone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="50%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+  <g transform="rotate(90 60 60)">
+    <path d="M 60 60
+             C 40 40, 40 20, 60 20
+             C 80 20, 80 40, 60 60
+             C 80 80, 80 100, 60 100
+             C 40 100, 40 80, 60 60 Z" 
+          fill="url(#duotone)" 
+          stroke="none"/>
+  </g>
+</svg>
